@@ -1,0 +1,66 @@
+body {
+	background: skyblue;
+}
+.container {
+	position: relative;
+	background: #fff;
+	text-align: center;
+	padding: 2rem 4rem;
+}
+
+.container:after {
+	background: url(../img/left.png) left top, url(../img/right.png) right top;
+	background-size: 160px, 160px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.container h2 {
+	margin: 1rem 0 2rem;
+	letter-spacing: 0.5rem;
+}
+.container p {
+	line-height: 2rem;
+}
+.floating01,
+.floating02 {
+	animation: floating 1s infinite alternate;
+	position: absolute;
+	max-width: 70px;
+}
+.floating01 {
+	left: 1rem;
+}
+.floating02 {
+	right: 1rem;
+	animation-delay: 0.2s;
+}
+@keyframes floating {
+	0% {
+		bottom: 3px;
+	}
+	100% {
+		bottom: -10px;
+	}
+}
+@media (max-width: 480px) {
+	.container {
+		padding: 2rem;
+	}
+	.container:after {
+		background-size: 120px, 120px;
+	}
+	.container h2 {
+		margin: 2.5rem 0 1rem;
+	}
+	.floating01,
+	.floating02 {
+		max-width: 55px;
+	}
+}
