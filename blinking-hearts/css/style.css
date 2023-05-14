@@ -1,0 +1,105 @@
+body {
+	background: skyblue;
+}
+.container {
+	position: relative;
+	background: #fff;
+	text-align: center;
+	margin: 3rem;
+	padding: 2rem 4rem;
+}
+.container .upper-tape,
+.container .lower-tape {
+	position: absolute;
+	max-width: 130px;
+}
+.container .upper-tape {
+	top: -15px;
+	left: -20px;
+	transform: rotate(-5deg);
+}
+.container .lower-tape {
+	bottom: -15px;
+	right: -25px;
+	transform: rotate(-185deg);
+}
+.container .heart01,
+.container .heart02 {
+	position: absolute;
+	opacity: 0;
+}
+.container .heart01 {
+	top: 58px;
+	right: 4px;
+	animation: blinking01 2.7s infinite linear;
+}
+.container .heart02 {
+	top: -18px;
+	right: -15px;
+	animation: blinking02 2.7s infinite linear;
+}
+@keyframes blinking01 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	21% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	91% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes blinking02 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	91% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.container h2 {
+	letter-spacing: 0.5rem;
+	word-wrap: break-word;
+	margin: 1rem 0 2rem;
+}
+.container p {
+	line-height: 2rem;
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 1.5rem 1rem;
+		padding: 2rem;
+	}
+	.container h2 {
+		margin: 2.5rem 0 1rem;
+	}
+	.container .heart01 {
+		width: 10%;
+		top: calc(58px - 2%);
+	}
+	.container .heart02 {
+		width: 15%;
+	}
+}
