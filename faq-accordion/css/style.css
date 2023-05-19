@@ -1,0 +1,65 @@
+body {
+	background: skyblue;
+}
+.container {
+	position: relative;
+	background: #fff;
+	margin: 3rem;
+	padding: 2rem 4rem;
+}
+.container h2 {
+	text-align: center;
+}
+.qa-container {
+	text-align: justify;
+	margin-bottom: 0.5rem;
+}
+.qa-container label {
+	display: block;
+	position: relative;
+	background: #f5f5f5;
+	padding: 1rem 2.5rem 1rem 0.5rem;
+	cursor: pointer;
+}
+.qa-container label:after {
+	content: '';
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-right: solid 2px #ccc;
+	border-bottom: solid 2px #ccc;
+	transform: rotate(45deg) translate(100%, 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 0.5rem;
+	margin-right: 1rem;
+}
+.qa-container input:checked ~ label:after {
+	transform: rotate(-135deg) translate(-100%, -100%);
+	margin-top: 0.75rem;
+}
+.qa-container input {
+	display: none;
+}
+.qa-container p {
+	height: 0px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, height 0.5s ease-in-out, margin 0.5s ease-in-out;
+	margin: 0 0.5rem;
+}
+.qa-container input:checked ~ p {
+	height: 150px;
+	opacity: 1;
+	transition: opacity 0.3s 0.2s ease-in-out, height 0.3s ease-in-out;
+	margin: 1rem 0.5rem;
+}
+@media (max-width: 600px) {
+	.container {
+		margin: 0;
+		padding: 2rem 1rem;
+	}
+	.qa-container input:checked ~ p {
+		height: 200px;
+	}
+}
