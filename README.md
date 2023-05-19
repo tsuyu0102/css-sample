@@ -18,6 +18,6 @@
 
 ## faq-accordion
 
-<img src="https://github.com/tsuyu0102/css-sample/blob/faq-accordion/screenshot.png">
+<img src="https://github.com/tsuyu0102/css-sample/blob/main/faq-accordion/screenshot.png">
 
 <a href="https://tsuyu0102.github.io/css-sample/faq-accordion/index.html">DEMO</a>
