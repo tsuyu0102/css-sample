@@ -1,0 +1,40 @@
+body {
+	background-color: rgb(24, 5, 42);
+}
+.item-section h2 {
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.75rem;
+}
+.item-section > div {
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-content: center;
+	gap: 2rem;
+	margin: 0 auto;
+}
+.item-section > div a {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 1rem;
+	background: rgb(24, 5, 42);
+	border: solid 1px blueviolet;
+	transition: 0.2s ease-in-out;
+}
+.item-section > div a:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: rgb(24, 5, 42);
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+	border-color: transparent;
+}
+.item-section > div a .price {
+	display: block;
+	color: #ff2d98;
+	margin-top: -0.5rem;
+}
