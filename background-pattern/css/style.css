@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+}
+.sample01 {
+	background-color: #f7e3da;
+	background-image: repeating-linear-gradient(-45deg, transparent 0 15px, #badfd7 15px 30px, #fdb7b9 30px 45px);
+	text-align: center;
+}
+.sample01 h2 {
+	letter-spacing: 1rem;
+	margin-bottom: 3rem;
+}
+.new-items-area {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+.items-container {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.items-container li a {
+	display: block;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	color: blueviolet;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
+	padding: 1rem;
+}
+.items-container li a:hover {
+	background: #fff;
+	box-shadow: 0 0 15px rgba(117, 108, 102, 0.5);
+}
+.items-container img {
+	max-width: 100%;
+}
+.sample02 {
+	width: calc(100% - 8rem);
+	max-width: 900px;
+	background-color: yellowgreen;
+	background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0 20px, transparent 20px 40px), repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0 20px, transparent 20px 40px);
+	text-align: center;
+	margin: 1rem auto;
+	padding: 3rem;
+}
+.menu-container {
+	background: #fff;
+
+	padding: 3rem;
+}
+.menu-container h2 {
+	color: #ca9f3a;
+	letter-spacing: 0.5rem;
+	padding: 2rem 0;
+}
+.menu-container h2:after {
+	content: '';
+	display: block;
+	width: 80px;
+	border-bottom: solid 0.5rem #cee6a2;
+	text-align: center;
+	margin: 3rem auto 0;
+}
+.menu-container ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-container ul li {
+	line-height: 7rem;
+	letter-spacing: 0.25rem;
+}
+@media (max-width: 400px) {
+	.sample02 {
+		width: calc(100% - 4rem);
+		margin: 0 auto;
+		padding: 2rem;
+	}
+	.menu-container {
+		padding: 2rem;
+	}
+	.menu-container h2 {
+		padding-top: 0;
+	}
+	.menu-container ul li {
+		line-height: 4rem;
+		letter-spacing: 0.15rem;
+	}
+}
+
+.sample03 {
+	height: 300px;
+	background-color: #f5f5f4;
+	background-image: radial-gradient(#9198e5 0 10px, transparent 10px), radial-gradient(#e66465 0 10px, transparent 10px);
+	background-position: 0 0, 30px 30px;
+	background-size: 60px 60px;
+}
